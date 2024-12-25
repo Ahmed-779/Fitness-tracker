@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fitnessstyle.css">
+    <title>Fitness Tracker</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Fitness Tracker</h1>
+        </header>
+ <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fitness.html">Workout Log</a></li>
+                <li><a href="mealplan.html">Meal Plan</a></li>
+            </ul>
+        </nav>
+        <section>
+            <label for="date">Select Date:</label>
+            <input type="date" id="datePicker">
+        </section>
+        <section id="workoutSection">
+            <h2>Today's Workout</h2>
+            <table id="workoutTable">
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Exercise</th>
+                        <th>Sets</th>
+                        <th>Reps</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+            <button id="addExerciseBtn">Add Exercise</button>
+        </section>
+    </div>
+    <script src="workoutlog.js"></script>
+</body>
+</html>
